@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,11 @@
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <style>
+        body{
+            overflow-y: auto;
+        }
+         </style>
 </head>
 <body>
     <header>
@@ -17,8 +23,7 @@
             <a href="#">Inicio</a>
             <a href="#">Acerca de </a>
             <a href="#">Portafolios</a>
-            <a href="#">Sesiones</a>
-            <a href="#">Contactos</a>
+            
         </nav>
         <section class "textos-header">
             <img src="img/logo.jpeg" 
@@ -54,13 +59,20 @@
 
     </section>
     <section class="portafolio">
-        <style>
-            .bt1{padding:6px;}
-            .bt2{padding:6px;border-radius:10px;}
-            .bt3{padding:6px;border-radius:50%;}
-            </style>
+        <div class="contenedor">
+        <body>
+
+            <form method="get" action="http://aprenderaprogramar.com">
             
-            <button class="bt1">Botón 1</button>
+            <button type="submit">
+            
+             <b>COMENZAR</b><br />
+            
+            </button>
+            
+            </form>
+            
+            </body> </div>
 
     </section>
 
