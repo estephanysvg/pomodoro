@@ -14,14 +14,14 @@ body{
 
 .contenedor{
     padding: 60px 0;
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
 }
 
 .titulo{
 color: #a52a2a;
-font-size: 30px;
+font-size: 40px;
 text-align: center;
 margin-bottom: 60px;
 }
@@ -34,8 +34,5 @@ height: 87px;
 
 }
 
-#seconds{
 
-    
 
-}
