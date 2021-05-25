@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <html>
+        <body>
+        
+            <head>
+                <title>Countdown</title>
+                <script type="text/javascript">
+                // set minutes
+                var mins = 25;
+                
+                // calculate the seconds 
+                var secs = mins * 60;
+                function countdown() {
+                setTimeout('Decrement()',1000);
+                }
+                function Decrement() {
+                if (document.getElementById) {
+                minutes = document.getElementById("minutes");
+                seconds = document.getElementById("seconds");
+                
+
+                if (seconds < 59) {
+                seconds.value = secs;
+                } else {
+                minutes.value = getminutes();
+                seconds.value = getseconds();
+                }
+                secs--;
+                setTimeout('Decrement()',1000);
+                }
+                }
+                function getminutes() {
+                
+
+                mins = Math.floor(secs / 60);
+                return mins;
+                }
+                function getseconds() {
+                
+
+                return secs-Math.round(mins *60);
+                }
+                </script>
+                </head>
+                <body>
+                
+                <div id="timer">
+                 <input id="minutes" type="text" style="width: 20px; border: none; background-color:none; font-size: 16px; font-weight: bold;">  <input id="seconds" type="text" style="width: 26px; border: none; background-color:none; font-size: 16px; font-weight: bold;"> 
+                </div>
+                <script>
+                countdown();
+                </script>
+                  
+        </body>
+        <body>
+
+            <form method="get" action="index3.html">
+            
+            <button type="submit">
+            
+             <b>DESCANSO</b><br />
+            
+            </button>
+            
+            </form>
+            
+            </body> </div>
+    </html>
