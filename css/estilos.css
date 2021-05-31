@@ -84,3 +84,12 @@ height: 87px;
     font-weight: bold;
     align-self: center;
 }
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.social {
+    position: relative;
+    left: 55%;
+}

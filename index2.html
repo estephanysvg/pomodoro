@@ -9,7 +9,7 @@
                 <script type="text/javascript">
                 // set minutes
                 var mins = 25;
-                
+                loop=true;
                 // calculate the seconds 
                 var secs = mins * 60;
                 function countdown() {
@@ -23,24 +23,29 @@
 
                 if (seconds < 59) {
                 seconds.innerHTML = secs;
-                } else {
+                } else{
                 minutes.innerHTML = getminutes();
                 seconds.innerHTML = getseconds();
+                }
+                if(mins==0&secs==0&loop===true){
+                    mins=5;
+                    secs=mins*60;
+                    loop=false;
+                }else if(mins==0&secs==0&loop===false){
+                    mins=25;
+                    secs=mins*60;
+                    loop=true;
                 }
                 secs--;
                 setTimeout('Decrement()',1000);
                 }
                 }
                 function getminutes() {
-                
-
-                mins = Math.floor(secs / 60);
-                return mins;
+                    mins = Math.floor(secs / 60);
+                    return mins;
                 }
                 function getseconds() {
-                
-
-                return secs-Math.round(mins *60);
+                    return secs-Math.round(mins *60);
                 }
                 </script>
                 </head>
