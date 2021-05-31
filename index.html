@@ -12,30 +12,29 @@
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script> 
     <link rel="stylesheet" href="./css/estilos.css">
-    
 </head>
 <body>
-    <header>
-        
-        <section class = "textos-header">
+    
+        <div class = "textos-header">
             <img src="img/logo.jpeg" >
-          
-     
-        </section>
+        </div>
 
-    </header>
-    <section class="contenedor-sobre-pomodorotimer">
+    <div class="contenedor-sobre-pomodorotimer">
         <h2 class="titulo"> Pomodoro Timer</h2>
-        <div class="contenedor-sobre-pomodoro">|
+        <div class="wrapper">
+        <div class="pomodoro">
             <img src="img/tomatoicon.png" alt="" class="imagen-about-pomodoro" 
             width="100"
             height="100">
-        <div class="contenido-textos">
-            
+        </div>
+        
+         <div class="texto1">   
         <h3>
                 <span>1</span> ¿Qué es el método POMODORO?</h3>
                 <p> El método Pomodoro es básicamente una herramienta de gestión y organización del tiempo que dedicamos a cada tarea, bien sea a lo largo de la jornada laboral o durante el tiempo que dedicamos al estudio. El éxito de esta técnica de estudio es que hace más llevadera la tarea que tenemos entre manos y además nos permite saber el tiempo real que nos lleva cada cosa, llegando a ser más conscientes de cómo empleamos nuestro tiempo.</p>
-            
+            </div> 
+        </div>  
+        <div class="contenido-textos">
             <h3><span>2</span> ¿En qué consiste? </h3>
                 <p> Para comenzar a aplicar la técnica de Pomodoro, lo primero que debes hacer es prepararte para una desconexión real y total de tu entorno. Nada de mails, mensajes o llamadas. Durante el tiempo que dediques a estudiar con este método no puedes tener ningún tipo de distracción. Ten en cuenta que su éxito está basado precisamente en la intensidad del tiempo que vas a dedicar al estudio.
 
@@ -48,28 +47,21 @@
        
         </div>
 
-
-    </section>
-    <section class="portafolio">
-        <div class="contenedor">
-        <body>
-
-            <form method="get" action="index2.html">
-            
-            <button type="submit">
-            
-             <b>COMENZAR</b><br />
-            
-            </button>
-            
-            </form>
-            
-            </body> </div>
-
-    </section>
-
-
+        <p>Dale a empezar cuando quieras iniciar la primera sesión de estudio</p>
+            <ons-button id="push-button" onclick="window.location='./index2.html'">EMPEZAR!</ons-button>
+      </ons-page>
+    </template>
+    <!-- <template id="CONTADOR.html">
+      <ons-page id="CONTADOR">
+        <ons-toolbar>
+          <div class="left"><ons-back-button>INICIO</ons-back-button></div>
+          <div class="center"></div>
+        </ons-toolbar>
     
-    
+        
+      </ons-page>
+    </template>
+ -->
+</div>    
 </body>
 </html>

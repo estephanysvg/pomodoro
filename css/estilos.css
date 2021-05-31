@@ -9,7 +9,7 @@
 body{
     font-family:'KoHo', sans-serif; 
     overflow-y: auto;
-
+    
 }
 
 .contenedor{
@@ -17,6 +17,7 @@ body{
     width: 100%;
     max-width: 1000px;
     margin: auto;
+    
 }
 
 .titulo{
@@ -32,7 +33,54 @@ margin: auto;
 width: 100px;
 height: 87px;
 
+
+
 }
 
+.textos-header {
+    background-color: #a52a2a;
+}
+.contenedor-sobre-pomodorotimer, .contenido-textos {
+    padding: 0.5em;
+}
 
+.wrapper {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.contenido-textos {
+ padding-left: 0.5em ;
 
+}
+
+.pomodoro{
+    margin-right: 0.5em;
+    align-self: center;
+
+}
+
+.timer {
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/fondo.jpg");
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: min-content;
+    flex-basis: 15em;
+    border: 3px black solid;
+    background: rgba(76, 175, 80, 0.3);
+}
+
+#minutes, #seconds, #points {
+    font-size: 5em;
+    font-weight: bold;
+    align-self: center;
+}
